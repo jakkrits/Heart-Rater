@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gEu-bH-xkR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Fav-Te-dMN">
+            <objects>
+                <viewController id="gEu-bH-xkR" customClass="ViewController" customModule="HeartRater" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OLJ-hf-wYO"/>
+                        <viewControllerLayoutGuide type="bottom" id="cR8-Vk-Mfw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ebi-yo-aEj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HK-9o-7I7" customClass="KDCircularProgress" customModule="HeartRater" customModuleProvider="target">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-ud-SDj">
+                                        <rect key="frame" x="72" y="101" width="157" height="98"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.98015890709999998" blue="0.97936557629999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="0.0" height="2"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BPM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C71-ju-uHK">
+                                        <rect key="frame" x="132" y="207" width="36" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.54264342870000004" blue="0.53879285690000001" alpha="0.4554798316" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Erb-8U-Lce"/>
+                                    <constraint firstAttribute="width" constant="300" id="FeA-c2-YsS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" red="0.41389888740000003" green="0.32439383100000002" blue="0.3358833162" alpha="0.54521276600000002" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressThickness">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trackThickness">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressInsideFillColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor1">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="glowAmount">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientRotateSpeed">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clockwise" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <integer key="value" value="180"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor2">
+                                        <color key="value" red="0.98431372549999996" green="0.0" blue="0.020210871120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor3">
+                                        <color key="value" red="0.95686274510000002" green="0.83096527310000001" blue="0.87897745920000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jhF-hP-sIO">
+                                <rect key="frame" x="20" y="28" width="52" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-MC-pvV">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="22"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.86020702140000005" green="0.98431372549999996" blue="0.90606835689999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Cti-ho-tBq" customClass="ChainIcon" customModule="HeartRater" customModuleProvider="target">
+                                        <rect key="frame" x="1" y="22" width="50" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.19215686269999999" green="1" blue="0.35686274509999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Mbs-7k-mkQ"/>
+                                            <constraint firstAttribute="width" constant="50" id="pb7-sZ-uuS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HkB-td-7cj">
+                                <rect key="frame" x="521" y="508" width="59" height="72"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="97n-rT-X9P" customClass="BatteryIcon" customModule="HeartRater" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="9yp-pP-azY"/>
+                                            <constraint firstAttribute="height" constant="50" id="V2g-yy-dLD"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ic-Xf-GlL">
+                                        <rect key="frame" x="0.0" y="50" width="59" height="22"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.86020702140000005" green="0.98431372549999996" blue="0.90606835689999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o3Z-l9-rew">
+                                <rect key="frame" x="20" y="508" width="57" height="72"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="5" translatesAutoresizingMaskIntoConstraints="NO" id="CRO-cU-kqA" customClass="WatchIcon" customModule="HeartRater" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="0.0" width="50" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.19215686269999999" green="1" blue="0.35686274509999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Ad8-Ug-Pxl"/>
+                                            <constraint firstAttribute="height" constant="50" id="elp-lE-Vbd"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5DQ-nt-9T0">
+                                        <rect key="frame" x="0.0" y="50" width="57" height="22"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.86020702140000005" green="0.98431372549999996" blue="0.90606835689999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NQa-Qc-cqD">
+                                <rect key="frame" x="512" y="28" width="68" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fat Burn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jR7-Cz-v4G">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="22"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.86020702140000005" green="0.98431372549999996" blue="0.90606835689999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Ngf-Nj-KQw" customClass="FireIcon" customModule="HeartRater" customModuleProvider="target">
+                                        <rect key="frame" x="9" y="22" width="50" height="50"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.19215686269999999" green="1" blue="0.35686274509999999" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="m0S-kp-oPP"/>
+                                            <constraint firstAttribute="width" constant="50" id="xQs-bQ-kbK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12442735602094246" green="0.11754522969912759" blue="0.12246326899120522" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="o3Z-l9-rew" firstAttribute="leading" secondItem="Ebi-yo-aEj" secondAttribute="leadingMargin" id="2gC-AF-bcm"/>
+                            <constraint firstItem="cR8-Vk-Mfw" firstAttribute="top" secondItem="HkB-td-7cj" secondAttribute="bottom" constant="20" id="C2O-8e-H6c"/>
+                            <constraint firstItem="jhF-hP-sIO" firstAttribute="top" secondItem="OLJ-hf-wYO" secondAttribute="bottom" constant="8" id="J3M-ec-pLB"/>
+                            <constraint firstItem="jhF-hP-sIO" firstAttribute="leading" secondItem="Ebi-yo-aEj" secondAttribute="leadingMargin" id="NnH-vZ-lw3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NQa-Qc-cqD" secondAttribute="trailing" id="RBa-rt-jzU"/>
+                            <constraint firstItem="3HK-9o-7I7" firstAttribute="centerX" secondItem="Ebi-yo-aEj" secondAttribute="centerX" id="RWY-jJ-VgJ"/>
+                            <constraint firstItem="HkB-td-7cj" firstAttribute="trailing" secondItem="Ebi-yo-aEj" secondAttribute="trailingMargin" id="a1A-hw-sYr"/>
+                            <constraint firstItem="cR8-Vk-Mfw" firstAttribute="top" secondItem="o3Z-l9-rew" secondAttribute="bottom" constant="20" id="fQl-rv-DMW"/>
+                            <constraint firstItem="3HK-9o-7I7" firstAttribute="centerY" secondItem="Ebi-yo-aEj" secondAttribute="centerY" id="rxG-x6-72r"/>
+                            <constraint firstItem="NQa-Qc-cqD" firstAttribute="top" secondItem="OLJ-hf-wYO" secondAttribute="bottom" constant="8" id="zkB-PT-QE2"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="bRq-lr-M5b" appends="YES" id="xl2-yn-34j"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="batteryIconView" destination="97n-rT-X9P" id="nkS-jh-aBV"/>
+                        <outlet property="batteryStatusLabel" destination="9Ic-Xf-GlL" id="AIR-LT-9wM"/>
+                        <outlet property="bpmLabel" destination="6cv-ud-SDj" id="x87-Mk-kHN"/>
+                        <outlet property="chainIconView" destination="Cti-ho-tBq" id="noE-ko-ROX"/>
+                        <outlet property="fatburnLabel" destination="jR7-Cz-v4G" id="cm4-DP-qV4"/>
+                        <outlet property="fireIconView" destination="Ngf-Nj-KQw" id="LzH-8I-8VV"/>
+                        <outlet property="heartRateView" destination="3HK-9o-7I7" id="4oP-TA-yxy"/>
+                        <outlet property="sensorNameLabel" destination="5DQ-nt-9T0" id="UDq-Wa-Nw8"/>
+                        <outlet property="statusLabel" destination="FOB-MC-pvV" id="kKp-K3-C5A"/>
+                        <outlet property="watchIconView" destination="CRO-cU-kqA" id="At7-zK-o1F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAP-ei-kyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bRq-lr-M5b">
+                    <connections>
+                        <action selector="screenTapped:" destination="gEu-bH-xkR" id="mBz-4l-4yJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="516" y="538"/>
+        </scene>
+    </scenes>
+</document>
